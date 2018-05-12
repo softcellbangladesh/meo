@@ -1,0 +1,332 @@
+/*!
+ * Start Bootstrap - Full Slider (https://startbootstrap.com/template-overviews/full-slider)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-slider/blob/master/LICENSE)
+ */
+
+.navbar-brand{
+	font-family: 'Acme', sans-serif;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.copyright{
+	text-align: left;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.nav-right{
+	float: right;
+}
+.header-img{
+  max-width: 50px;
+}
+
+.carousel-caption{
+	bottom: 20%;
+	background-color: #00000080;
+}
+
+.body-content{
+	padding: 100px 0px 100px 0px;
+}
+.count-div{
+	margin-bottom: 30px;
+}
+.dohs-div-1 {
+    background: #ff9a9a;
+    text-align: center;
+}
+.dohs-div-2 {
+    background: #a09aff;
+    text-align: center;
+}
+.dohs-div-3 {
+    background: #aeff9a;
+    text-align: center;
+}
+.dohs{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.dohs h3{
+  background: #d0d0d0;
+  padding: 5px 0px;
+}
+
+.work-no{
+    border: 1px solid #c0c0c0;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #d0d0d0;
+}
+.work-div{
+	border: 2px #1e6b0a;
+    padding-top: 15px;
+    border-style: dashed;
+    margin: 30px 0px;
+}
+
+.main-work-title{
+	border-bottom: 5px #343a40;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+}
+.work-title-l{
+	padding: 7px 0px 0px 10px;
+}
+
+.work-title-r{
+	padding: 7px 10px 0px 0px;
+}
+
+.fa-angle-double-down{
+	color: #1e6b0a;
+}
+
+.service-flow{
+  margin-bottom: 20px;
+}
+
+.req-title{
+  background: #d0d0d0;
+  padding: 5px 10px;
+}
+
+.form-title{
+  background: #3e7390;
+  color: #fff;
+  padding: 10px;
+}
+.verify-code{
+  //display: none;
+}
+
+/* Sidebar start */
+
+#sidebar ul li{
+  border-bottom: 1px solid #d2d2d2;
+  background: #e7e7e7;
+  padding: 5px 10px;
+}
+
+#sidebar ul li ul li{
+  border-bottom: 0px;
+  background: #e7e7e7;
+  padding: 5px 10px;
+}
+
+#sidebar ul li a:hover{
+  color: #24b300;
+  text-decoration: none;
+}
+
+#sidebar .active a{
+  color: #24b300;
+}
+
+/* Sidebar end */
+
+/** Toaster , Overlay, Loader Start**/
+
+.toaster-box{
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+  width: 300px;
+  min-width: 240px;
+  min-height: 80px;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.toaster{
+  overflow: hidden;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+.toaster-left-box{
+  height: 100%;
+  padding: 0px 8px;
+}
+
+.toaster-header{
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+.toaster-header span{
+}
+
+.toaster-details{
+  padding: 5px 0px;
+}
+
+.toaster-right-box{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+    padding: 0px;
+}
+
+.toaster-cross{
+  border-left: 1px solid #000;
+  cursor: pointer;
+    height: 76px;
+    margin: 2px 0px;
+
+}
+
+.toaster-cross:hover{
+  opacity: 0.6;
+}
+
+.toaster-warning{
+  background-color: #FFEA85;
+}
+
+.toaster-error{
+  color: #ffffff;
+  background-color: #F73F52;
+}
+
+.toaster-success{
+  color: #ffffff;
+  background-color: #90D26D;
+}
+
+/* .border-success{
+  border: 1px solid #94c26e;
+}
+
+.title-success{
+  color: #94c26e;
+}
+
+.border-error{
+  border: 1px solid #94c26e;
+}
+
+.title-error{
+  color: #94c26e;
+} */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.loader{
+  display: none;
+  top: 45%;
+  width: 100%;
+  position: absolute;
+}
+
+.lds-facebook {
+  z-index: 99;
+  margin: auto;
+  /* display: inline-block; */
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #94c26e;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+/** Toaster , Overlay, Loader end**/
+
+
+@media only screen and (max-width: 600px)  {
+	.copyright{
+		text-align: center;
+	    padding-left: 15px;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	}
+	.nav{
+		margin: 0 auto;
+	}
+	.nav-item{
+		margin: 0 auto;
+	}
+	.nav-right{
+		float: none;
+	}
+	.nav-social{
+		max-width: 150px;
+	}
+	
+}

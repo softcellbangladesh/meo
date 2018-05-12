@@ -1,0 +1,10 @@
+
+
+ .asterisk:after {
+  content:"*";
+  color:red;
+}
+.asterisk-before:before{
+     content:"*";
+     color:red;
+}
